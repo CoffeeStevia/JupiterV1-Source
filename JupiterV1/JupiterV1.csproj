@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99316BAC-F3F8-479D-8127-5B8A4A962412}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JupiterV1</RootNamespace>
+    <AssemblyName>JupiterV1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Jupiter Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KrnlAPI">
+      <HintPath>D:\Users\chipp\source\repos\Splice-Paid\Splice-Paid\bin\Debug\KrnlAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxygen API">
+      <HintPath>..\..\Centron\Centron\bin\Debug\Oxygen API.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\..\..\Downloads\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ValyseAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ValyseAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="WeAreDevs_API">
+      <HintPath>..\..\..\..\Downloads\WRD_API\WRD API\WeAreDevs_API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="Jupiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jupiter.Designer.cs">
+      <DependentUpon>Jupiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jupiter.resx">
+      <DependentUpon>Jupiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9nabtuotuulifex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor-3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-icon-256-2103632816.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-5-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_settings_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_apps_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_code_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_home_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_play_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_folder_add_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_folder_open_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_eraser_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_eyedropper_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_folder_arrow_right_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_arrow_minimize_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discord-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5522e6e862549e14e310f22a2e765a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_text_bullet_list_ltr_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_fluent_arrow_export_ltr_24_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deployed_code_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VapeLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VapeLogo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jupiter Logo.ico" />
+    <None Include="Resources\ic_fluent_book_open_24_filled.png" />
+    <None Include="Resources\ic_fluent_brain_circuit_24_filled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
